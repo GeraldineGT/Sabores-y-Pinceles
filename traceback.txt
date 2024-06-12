@@ -1,0 +1,78 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 6162, in script
+    call screen reassemble_puzzle1
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/screens.rpy", line 1568, in execute
+    screen reassemble_puzzle1:
+  File "game/screens.rpy", line 1568, in execute
+    screen reassemble_puzzle1:
+  File "game/screens.rpy", line 1576, in execute
+    draggroup:
+  File "game/screens.rpy", line 1587, in execute
+    for i in range(page_pieces):
+  File "game/screens.rpy", line 1588, in execute
+    drag:
+  File "game/screens.rpy", line 1588, in keywords
+    drag:
+  File "game/screens.rpy", line 1592, in <module>
+    dropped piece_drop
+NameError: name 'piece_drop' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 6162, in script
+    call screen reassemble_puzzle1
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 3347, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\screen.py", line 476, in visit_all
+    callback(self)
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\screen.py", line 487, in per_interact
+    self.update()
+  File "E:\Programas\RenPy\renpy-8.1.3-sdk\renpy\display\screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 1568, in execute
+    screen reassemble_puzzle1:
+  File "game/screens.rpy", line 1568, in execute
+    screen reassemble_puzzle1:
+  File "game/screens.rpy", line 1576, in execute
+    draggroup:
+  File "game/screens.rpy", line 1587, in execute
+    for i in range(page_pieces):
+  File "game/screens.rpy", line 1588, in execute
+    drag:
+  File "game/screens.rpy", line 1588, in keywords
+    drag:
+  File "game/screens.rpy", line 1592, in <module>
+    dropped piece_drop
+NameError: name 'piece_drop' is not defined
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.1.3.23091805
+Sabores y Pinceles 1.0
+Tue Jun 11 22:29:24 2024
